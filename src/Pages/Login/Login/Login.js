@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -41,7 +41,7 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
-            <p>New to Wedding Moments? <span className='text-danger' onClick={navigateSignup}>Please Signup!</span></p>
+            <p>New to Wedding Moments? <Link to={'/signup'} className='text-danger pe-auto text-decoration-none' onClick={navigateSignup}>Please Signup!</Link></p>
         </div>
     );
 };
