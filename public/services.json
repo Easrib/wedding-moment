@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "WEDDING",
+        "price": "300",
+        "img": "https://i.ibb.co/Fb95jbn/01-WEDDINGS.jpg"
+    },
+    {
+        "id": 2,
+        "name": "ENGAGEMENTS",
+        "price": "150",
+        "img": "https://i.ibb.co/dt3Ryz8/03-ENGAGEMENTS.jpg"
+    },
+    {
+        "id": 3,
+        "name": "PROPOSALS",
+        "price": "100",
+        "img": "https://i.ibb.co/LtZkW69/05-PROPOSALS.jpg"
+    },
+    {
+        "id": 4,
+        "name": "PORTRAITS",
+        "price": "180",
+        "img": "https://i.ibb.co/ctFM194/04-PORTRAITS.jpg"
+    },
+    {
+        "id": 5,
+        "name": "PRESHOOTS",
+        "price": "250",
+        "img": "https://i.ibb.co/LxyHwMP/06-PRESHOOTS1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "PARTY",
+        "price": "300",
+        "img": "https://i.ibb.co/k8v0XPD/02-MITZVAHS.jpg"
+    }
+]

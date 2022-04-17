@@ -14,19 +14,18 @@ const Blogs = () => {
             </div>
             <div>
                 <h2>Question: What other services does firebase provide other than authentication?</h2>
-                <p>Answer: fire base provides many services other than authentication. Some of them are-
-                    <ul>
-                        <li>Hosting</li>
-                        <li>Cloud Firestore</li>
-                        <li>Cloud function</li>
-                        <li>Google Analytics</li>
-                        <li>Cloud Messaging</li>
-                        <li>Cloud Storage</li>
-                        <li>Prediction</li>
-                        <li>Dynamic Links</li>
-                        <li>Remote Config</li>
-                    </ul>
-                </p>
+                <p>Answer: fire base provides many services other than authentication. Some of them are-</p>
+                <ul>
+                    <li>Hosting</li>
+                    <li>Cloud Firestore</li>
+                    <li>Cloud function</li>
+                    <li>Google Analytics</li>
+                    <li>Cloud Messaging</li>
+                    <li>Cloud Storage</li>
+                    <li>Prediction</li>
+                    <li>Dynamic Links</li>
+                    <li>Remote Config</li>
+                </ul>
             </div>
         </div>
     );

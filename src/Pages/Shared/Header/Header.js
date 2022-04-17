@@ -6,15 +6,15 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar sticky='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand href="#home">Wedding Moments</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#features">Services</Nav.Link>
-                        <Nav.Link href="#pricing">About</Nav.Link>
-                        <Nav.Link href="#pricing">Contact Us</Nav.Link>
+                        <Nav.Link href="home#services">Services</Nav.Link>
+                        <Nav.Link as={Link} to="#about">About</Nav.Link>
+                        <Nav.Link as={Link} to="#contact">Contact Us</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link as={Link} to='/blogs'>Blogs</Nav.Link>
