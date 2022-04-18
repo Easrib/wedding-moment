@@ -17,7 +17,7 @@ const Service = ({ service }) => {
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <p>{description}</p>
-                <p>{price}</p>
+                <p>Price: ${price}</p>
             </Card.Body>
             <button onClick={handleCheckout}>Book The Service</button>
         </Card>

@@ -15,13 +15,13 @@ const Header = () => {
     return (
         <Navbar sticky='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">Wedding Moments</Navbar.Brand>
+                <Navbar.Brand href="home#home">Wedding Moments</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="home#services">Services</Nav.Link>
                         <Nav.Link as={Link} to="/about">About</Nav.Link>
-                        <Nav.Link as={Link} to="#contact">Contact Us</Nav.Link>
+                        <Nav.Link href="home#feedback">Feedback</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link as={Link} to='/blogs'>Blogs</Nav.Link>

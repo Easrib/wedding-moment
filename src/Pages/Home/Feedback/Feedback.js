@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap';
 
 const Feedback = () => {
     return (
-        <div>
+        <div id='feedback'>
             <h2 className='text-center my-4'>Any feedback or Quarries!!!</h2>
             <Form className='w-50 mx-auto mb-2'>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
