@@ -8,13 +8,12 @@ import './SocialLogin.css'
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
-
+    let errorMessage;
     if (error) {
-        return (
+        errorMessage =
             <div>
                 <p className='text-danger'>Error: {error.message}</p>
             </div>
-        );
     }
     if (user) {
         navigate('/home');
@@ -26,6 +25,7 @@ const SocialLogin = () => {
                 <p className='p-2 mt-2 px-2 '>Or</p>
                 <div style={{ height: '1px' }} className='bg-primary w-50'></div>
             </div>
+            {errorMessage}
             <div>
                 <button onClick={() => signInWithGoogle()} className='btn btn-info d-block mx-auto w-50'> <img className='google-icon' src={google} alt="" /> Google Sign in</button>
             </div>

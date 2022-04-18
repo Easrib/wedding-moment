@@ -17,9 +17,17 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
+    let errorMessage;
 
     if (user) {
         navigate(from, { replace: true });
+    }
+
+    if (error) {
+        errorMessage =
+            <div>
+                <p className='text-danger'>Error: {error.message}</p>
+            </div>
     }
 
     const handleSubmit = (event) => {
@@ -53,6 +61,7 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
+            {errorMessage}
             <p>New to Wedding Moments? <Link to={'/signup'} className='text-danger pe-auto text-decoration-none' onClick={navigateSignup}>Please Signup!</Link></p>
             <SocialLogin></SocialLogin>
         </div>
