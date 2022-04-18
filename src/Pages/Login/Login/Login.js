@@ -4,6 +4,8 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [
@@ -44,8 +46,13 @@ const Login = () => {
     }
     const resetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('Sent email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Password reset mail sent');
+        }
+        else {
+            toast('Please write your email address')
+        }
     }
     return (
         <div className='container w-50 mx-auto my-4'>
@@ -69,8 +76,9 @@ const Login = () => {
             </Form>
             {errorMessage}
             <p>New to Wedding Moments? <Link to={'/signup'} className='text-danger pe-auto text-decoration-none' onClick={navigateSignup}>Please Signup!</Link></p>
-            <p>Forget Password? <Link to={'/signup'} className='text-danger pe-auto text-decoration-none' onClick={resetPassword}>Reset Password!</Link></p>
+            <p>Forget Password? <Link to={'/login'} className='text-danger pe-auto text-decoration-none' onClick={resetPassword}>Reset Password!</Link></p>
             <SocialLogin></SocialLogin>
+            <ToastContainer />
         </div>
     );
 };
