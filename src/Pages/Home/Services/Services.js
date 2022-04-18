@@ -14,12 +14,14 @@ const Services = () => {
         <div id='services'>
             <h2 className='text-center'>My Services</h2>
             <CardGroup className='m-4'>
-                {
-                    services.map(service => <Service
-                        key={service.id}
-                        service={service}
-                    ></Service>)
-                }
+                <div className="row">
+                    {
+                        services.map(service => <Service
+                            key={service.id}
+                            service={service}
+                        ></Service>)
+                    }
+                </div>
             </CardGroup>
         </div>
     );
