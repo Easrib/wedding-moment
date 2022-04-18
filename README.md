@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Getting Started with Wedding Moments
+
+This project is live deployed at [Wedding Moments](https://wedding-moment-ad9ea.web.app/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Main Features & Functionality
+* All services are with price
+* Can book service with secured Login
+* Some recent photographs are shown at banner
+* My details are mentioned at About me page
+* One can give feedback at feedback section
+
+## Frameworks & Technology uses
+* React JS
+* Firebase
+* React Bootstrap
+* React Firebase Hooks
+* React Router 
+* React Toastify
 
 ## Available Scripts
 
