@@ -3,36 +3,42 @@
         "id": 1,
         "name": "WEDDING",
         "price": "300",
+        "description": "From the easy conversation that ensues to finding their level of comfort with posing, the magic naturally occurs at a relaxed pace, allowing the couple the freedom to be romantic in a setting that has meaning to them.",
         "img": "https://i.ibb.co/Fb95jbn/01-WEDDINGS.jpg"
     },
     {
         "id": 2,
         "name": "ENGAGEMENTS",
         "price": "150",
+        "description": "From my perspective, the best way to achieve a deeper bond with wedding couples is to share a few hours with them at an engagement photo shoot.",
         "img": "https://i.ibb.co/dt3Ryz8/03-ENGAGEMENTS.jpg"
     },
     {
         "id": 3,
         "name": "PROPOSALS",
         "price": "100",
+        "description": "",
         "img": "https://i.ibb.co/LtZkW69/05-PROPOSALS.jpg"
     },
     {
         "id": 4,
         "name": "PORTRAITS",
         "price": "180",
+        "description": "",
         "img": "https://i.ibb.co/ctFM194/04-PORTRAITS.jpg"
     },
     {
         "id": 5,
         "name": "PRESHOOTS",
         "price": "250",
+        "description": "",
         "img": "https://i.ibb.co/LxyHwMP/06-PRESHOOTS1.jpg"
     },
     {
         "id": 6,
         "name": "PARTY",
         "price": "300",
+        "description": "",
         "img": "https://i.ibb.co/k8v0XPD/02-MITZVAHS.jpg"
     }
 ]

@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const [
@@ -14,9 +15,11 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true });
     }
 
     const handleSubmit = (event) => {
@@ -37,9 +40,6 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -54,6 +54,7 @@ const Login = () => {
                 </Button>
             </Form>
             <p>New to Wedding Moments? <Link to={'/signup'} className='text-danger pe-auto text-decoration-none' onClick={navigateSignup}>Please Signup!</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
