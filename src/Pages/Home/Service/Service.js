@@ -1,7 +1,14 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Service = ({ service }) => {
+
+    const navigate = useNavigate();
+
+    const handleCheckout = () => {
+        navigate('/checkout');
+    }
 
     const { name, price, img } = service;
     return (
@@ -13,7 +20,7 @@ const Service = ({ service }) => {
                     <Card.Title>{name}</Card.Title>
                     <p>{price}</p>
                 </Card.Body>
-                <button>Book The Service</button>
+                <button onClick={handleCheckout}>Book The Service</button>
             </Card>
         </div>
     );
